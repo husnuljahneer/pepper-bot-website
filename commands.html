@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>pepper-bot</title>
+</head>
+
+<body class="bg-dark">
+    <section>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"> <img
+                        src="https://discord.com/assets/52d1136b13f76fc2d27ee5a22124dcef.svg" alt="" height="50">
+                    pepper-bot</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Commands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1">Staffs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1">Invite</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="nav-link active" href="#" style="color: blanchedalmond;">Support</a>
+                        <button class="btn btn-success" type="submit" style="border-radius: 0px;">Login</button>
+                    </form>
+                </div>
+
+        </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-5">
+            &nbsp;
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <ul class="nav nav-tabs " id="myTab" role="tablist">
+                <li class="nav-item " role="presentation">
+                  <button class="nav-link  active" id="bot-tab" data-bs-toggle="tab" data-bs-target="#bot" type="button" role="tab" aria-controls="bot" aria-selected="true">Bot</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link " id="fun-tab" data-bs-toggle="tab" data-bs-target="#fun" type="button" role="tab" aria-controls="fun" aria-selected="false">Fun</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link " id="emotes-tab" data-bs-toggle="tab" data-bs-target="#emotes" type="button" role="tab" aria-controls="emotes" aria-selected="false">Emotes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="images-tab" data-bs-toggle="tab" data-bs-target="#images" type="button" role="tab" aria-controls="images" aria-selected="false">Images</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="music-tab" data-bs-toggle="tab" data-bs-target="#music" type="button" role="tab" aria-controls="music" aria-selected="false">Music</button>
+                  </li>
+              </ul>
+              <div class="tab-content bg-transparent" id="myTabContent">
+                <div class="tab-pane fade show active" id="bot" role="tabpanel" aria-labelledby="bot-tab">
+
+                    <div class="accordion bg-dark mt-5" id="debug">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#debugOne" aria-expanded="true" aria-controls="collapseOne">
+                                    debug
+                                </button>
+                            </h2>
+                            <div id="debugOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#debug">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!debug</code>
+                                    <br>
+                                    <p class="mt-3">Check if the bot is working properly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion bg-dark mt-5" id="ping">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#pingOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ping
+                                </button>
+                            </h2>
+                            <div id="pingOne" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#ping">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!ping</code>
+                                    <br>
+                                    <p class="mt-3">Ping now!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="fun" role="tabpanel" aria-labelledby="fun-tab">
+
+                    <div class="accordion bg-dark mt-5" id="askme">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#askmeOne" aria-expanded="true" aria-controls="collapseOne">
+                                    askme
+                                </button>
+                            </h2>
+                            <div id="askmeOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#askme">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!askme `input a question here` </code>
+                                    <br>
+                                    <p class="mt-3">Ask the bot anything. Bot will reply. ( I hope so)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="dare">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#dareOne" aria-expanded="true" aria-controls="collapseOne">
+                                    dare
+                                </button>
+                            </h2>
+                            <div id="dareOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#dare">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!dare </code>
+                                    <br>
+                                    <p class="mt-3">Play dare challenge with your friends</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="flip">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flipOne" aria-expanded="true" aria-controls="collapseOne">
+                                    flip
+                                </button>
+                            </h2>
+                            <div id="flipOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#flip">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!flip `input a text here to flip` </code>
+                                    <br>
+                                    <p class="mt-3">Flip the text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="gaymeter">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#gaymeterOne" aria-expanded="true" aria-controls="collapseOne">
+                                    gaymeter
+                                </button>
+                            </h2>
+                            <div id="gaymeterOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#gaymeter">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!gaymeter </code><br>
+                                    <strong>Usage : </strong> <code>!gaymeter @mention</code>
+                                    <br>
+                                    <p class="mt-3">Check how gay you or your friends are</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="insult">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#insultOne" aria-expanded="true" aria-controls="collapseOne">
+                                    insult
+                                </button>
+                            </h2>
+                            <div id="insultOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#insult">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!insult </code>
+                                    <br>
+                                    <p class="mt-3">DONOT USE THIS IF YOU LOVE YOUR MOM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="joke">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#jokeOne" aria-expanded="true" aria-controls="collapseOne">
+                                    joke
+                                </button>
+                            </h2>
+                            <div id="jokeOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#joke">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!joke </code>
+                                    <br>
+                                    <p class="mt-3">A lame joke nothing else</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="meme">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#memeOne" aria-expanded="true" aria-controls="collapseOne">
+                                    meme
+                                </button>
+                            </h2>
+                            <div id="memeOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#meme">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!meme </code>
+                                    <br>
+                                    <p class="mt-3">Generates a random meme from the reddit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="pepe">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#pepeOne" aria-expanded="true" aria-controls="collapseOne">
+                                    pepe
+                                </button>
+                            </h2>
+                            <div id="pepeOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#pepe">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!pepe </code>
+                                    <br>
+                                    <p class="mt-3">Generates a random pepe from the reddit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="ship">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#shipOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ship
+                                </button>
+                            </h2>
+                            <div id="shipOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#ship">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!ship @mention</code>
+                                    <br>
+                                    <p class="mt-3">Ship with someone on the server</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="truth">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#truthOne" aria-expanded="true" aria-controls="collapseOne">
+                                    truth
+                                </button>
+                            </h2>
+                            <div id="truthOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#truth">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!truth</code>
+                                    <br>
+                                    <p class="mt-3">Play truth challenge with friends</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="wyr">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#wyrOne" aria-expanded="true" aria-controls="collapseOne">
+                                    wyr
+                                </button>
+                            </h2>
+                            <div id="wyrOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#wyr">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!wyr </code>
+                                    <br>
+                                    <p class="mt-3">Play would you rather challenge with friends</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="emotes" role="tabpanel" aria-labelledby="emotes-tab">
+
+                    <div class="accordion bg-dark mt-5" id="feed">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#feedOne" aria-expanded="true" aria-controls="collapseOne">
+                                    feed
+                                </button>
+                            </h2>
+                            <div id="feedOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#feed">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!feed </code> <br>
+                                    <strong>Usage : </strong> <code>!feed @mention</code>
+                                    <br>
+                                    <p class="mt-3">Feed someone or yourself on the server</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="kill">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#killOne" aria-expanded="true" aria-controls="collapseOne">
+                                    kill
+                                </button>
+                            </h2>
+                            <div id="killOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#kill">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!kill </code>
+                                    <br>
+                                    <strong>Usage : </strong> <code>!kill @mention</code>
+                                    <p class="mt-3">Generates a random kill gif | kill yourself or someone on the server</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="pat">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#patOne" aria-expanded="true" aria-controls="collapseOne">
+                                    pat
+                                </button>
+                            </h2>
+                            <div id="patOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#pat">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!pat </code>
+                                    <br>
+                                    <strong>Usage : </strong> <code>!pat @mention</code>
+                                    <p class="mt-3">Generates a random pat gif | pat yourself or someone on the server</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion bg-dark mt-5" id="poke">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#pokeOne" aria-expanded="true" aria-controls="collapseOne">
+                                    poke
+                                </button>
+                            </h2>
+                            <div id="pokeOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#poke">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!poke </code>
+                                    <br>
+                                    <strong>Usage : </strong> <code>!poke @mention</code>
+                                    <p class="mt-3">Generates a random poke gif | poke yourself or someone on the server</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="punch">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#punchOne" aria-expanded="true" aria-controls="collapseOne">
+                                    punch
+                                </button>
+                            </h2>
+                            <div id="punchOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#punch">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!punch </code>
+                                    <br>
+                                    <strong>Usage : </strong> <code>!punch @mention</code>
+                                    <p class="mt-3">Generates a random punch gif | punch yourself or someone on the server</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="slap">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#slapOne" aria-expanded="true" aria-controls="collapseOne">
+                                    slap
+                                </button>
+                            </h2>
+                            <div id="slapOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#slap">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!slap </code>
+                                    <br>
+                                    <strong>Usage : </strong> <code>!slap @mention</code>
+                                    <p class="mt-3">Generates a random slap gif | slap yourself or someone on the server</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="smile">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#smileOne" aria-expanded="true" aria-controls="collapseOne">
+                                    smile
+                                </button>
+                            </h2>
+                            <div id="smileOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#smile">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!smile </code>
+                                    <br>
+                                    <strong>Usage : </strong> <code>!smile @mention</code>
+                                    <p class="mt-3">Generates a random smile gif | Be happy or make someone happy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+
+                    <div class="accordion bg-dark mt-5" id="cat">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#catOne" aria-expanded="true" aria-controls="collapseOne">
+                                    cat
+                                </button>
+                            </h2>
+                            <div id="catOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#cat">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!cat </code>
+                                    <p class="mt-3">Generates a random cat gif </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="cow">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#cowOne" aria-expanded="true" aria-controls="collapseOne">
+                                    cow
+                                </button>
+                            </h2>
+                            <div id="cowOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#cow">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!cow </code>
+                                    <p class="mt-3">Generates a random cow gif </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="music" role="tabpanel" aria-labelledby="music-tab">
+
+                    <div class="accordion bg-dark mt-5" id="clear-queue">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#clear-queueOne" aria-expanded="true" aria-controls="collapseOne">
+                                    clear-queue
+                                </button>
+                            </h2>
+                            <div id="clear-queueOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#clear-queue">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!clear-queue </code>
+                                    <p class="mt-3"> Clear the current playist </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="filter">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#filterOne" aria-expanded="true" aria-controls="collapseOne">
+                                    filter
+                                </button>
+                            </h2>
+                            <div id="filterOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#filter">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!filter @mention-filter-name</code>
+                                    <br>
+                                    <p> Filters : <code>
+                                        8D, gate, haas, phaser, treble, tremolo, vibrato, reverse, karaoke, flanger, mcompand, pulsator, subboost, bassboost, vaporwave, nightcore, normalizer, surrounding </code>
+                                    <p class="mt-3"> Filter the song you currently listening to  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="loop">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#loopOne" aria-expanded="true" aria-controls="collapseOne">
+                                    loop
+                                </button>
+                            </h2>
+                            <div id="loopOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#loop">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!loop </code>
+                                    <p class="mt-3"> Loop the queue </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="nowplaying">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#nowplayingOne" aria-expanded="true" aria-controls="collapseOne">
+                                    nowplaying
+                                </button>
+                            </h2>
+                            <div id="nowplayingOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#nowplaying">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!nowplaying </code>
+                                    <p class="mt-3">Check which song is now playing </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="pause">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#pauseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    pause
+                                </button>
+                            </h2>
+                            <div id="pauseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#pause">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!pause </code>
+                                    <p class="mt-3"> pause the song</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="play">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#playOne" aria-expanded="true" aria-controls="collapseOne">
+                                    play
+                                </button>
+                            </h2>
+                            <div id="playOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#play">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!play `song name or link to the song`</code>
+                                    <p class="mt-3"> play the song or resume</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="stop">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#stopOne" aria-expanded="true" aria-controls="collapseOne">
+                                    stop
+                                </button>
+                            </h2>
+                            <div id="stopOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#stop">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!stop </code>
+                                    <p class="mt-3"> stop the song</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="skip">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#skipOne" aria-expanded="true" aria-controls="collapseOne">
+                                    skip
+                                </button>
+                            </h2>
+                            <div id="skipOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#skip">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!skip </code>
+                                    <p class="mt-3"> skip the currently playing song</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="queue">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#queueOne" aria-expanded="true" aria-controls="collapseOne">
+                                    queue
+                                </button>
+                            </h2>
+                            <div id="queueOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#queue">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!queue </code>
+                                    <p class="mt-3"> Check the current playlist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="search">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#searchOne" aria-expanded="true" aria-controls="collapseOne">
+                                    search
+                                </button>
+                            </h2>
+                            <div id="searchOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#search">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!search `input`</code>
+                                    <p class="mt-3"> Search for a song </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="shuffle">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#shuffleOne" aria-expanded="true" aria-controls="collapseOne">
+                                    shuffle
+                                </button>
+                            </h2>
+                            <div id="shuffleOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#shuffle">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!shuffle </code>
+                                    <p class="mt-3"> shuffle the queue</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion bg-dark mt-5" id="volume">
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#volumeOne" aria-expanded="true" aria-controls="collapseOne">
+                                    volume
+                                </button>
+                            </h2>
+                            <div id="volumeOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#volume">
+                                <div class="accordion-body text-white">
+                                    <strong>Usage : </strong> <code>!volume `input`</code>
+                                    <p class="mt-3"> Increase or decrease the volume</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+              </div>
+
+
+            
+    </section>
+
+  <section>
+      <div class="container mt-5 footer bg-dark text-center" style="margin-bottom: 0;" >
+            <p class="display-5 text-white" style="font-size: 15px;">
+                Copyright © pepper-bot 2021
+            </p> 
+      </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
